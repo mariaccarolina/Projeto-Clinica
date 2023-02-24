@@ -283,55 +283,71 @@
     }
 }
 
-    @media screen and (max-width:400px) {
-        .container_informação_home {
-            height: 500px;
-            background-size: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-
-        .texto_home {
-            margin-top: 0;
-        }
-
-        .texto_especialista {
-            width: 90%;
-            margin: 10px;
-            display: none;
-        }
-
-        .titulo_container_especialista {
-            font-size: 24px;
-            text-transform: uppercase;
-        }
-
-        .especialidade {
-            width: 140px;
-        }
-
-        .box_variedade_especialistas {
-            margin: 20px;
-        }
-
-        .mobile2 {
-            display: none;
-        }
-
-        .title_especialista {
-            font-size: 20px;
-            padding: 10px;
-        }
-
-        .imagem_especialista {
-            height: 150px;
-            width: 140px;
-            object-fit: cover;
-        }
-
-        .btn_agendamento_home{
-            margin-left: 0;
-        }
+@media screen and (max-width:400px) {
+    .container_informação_home {
+        height: 500px;
+        background-size: 300px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
+
+
+    .texto_home {
+        margin-top: 0;
+    }
+
+    .texto_especialista {
+        width: 90%;
+        margin: 10px;
+        display: none;
+    }
+
+    .titulo_container_especialista {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    .especialidade {
+        width: 140px;
+    }
+
+    .box_variedade_especialistas {
+        margin: 20px;
+    }
+
+    .mobile2 {
+        display: none;
+    }
+
+    .title_especialista {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .especialidade, .imagem_especialista{
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .btn_agendamento_home {
+        margin-left: 0;
+    }
+
+    .mais_especialidades{
+        width: 9
+        90%;
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .titulo_home, .titulo_container_especialista {
+        font-size: 22px;
+    }
+
+    .especialidade, .imagem_especialista{
+        width: 100%;
+    }
+}
