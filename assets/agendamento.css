@@ -1,12 +1,13 @@
 h1{
     color:  #7ca6ed;
     padding: 10px;
+    text-align: center;
 }
 
 p{
     font-size: 24px;
     color: darkslategray;
-
+    text-align: center;
 }
 
 .box_agendamento{
@@ -16,3 +17,29 @@ p{
     align-items: center;
 
 }
+
+.formulario{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+input{
+    display: block;
+    width: 400px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgb(192, 195, 201);
+    background-color: #7ca6ed;
+     margin: 10px;
+}
+
+input::placeholder{
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input:hover{
+  background-color: rgb(228, 164, 75);
