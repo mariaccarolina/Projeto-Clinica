@@ -42,4 +42,11 @@ input::placeholder{
 }
 
 input:hover{
-  background-color: rgb(228, 164, 75);
+  background-color: rgb(228, 164, 75);}
+
+  @media screen and (max-width:400px) {
+    input{
+        width: 100%;
+       margin: 0 0 10px 0;
+    }
+  }
