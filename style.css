@@ -8,10 +8,17 @@
 .container_header {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+
+}
+
+.imagem_mobile, .fechar{
+    display: none;
 }
 
 .imagem_logomarca {
     width: 100%;
+
 }
 
 .container_ul {
@@ -36,28 +43,113 @@
     font-weight: bold;
     background: chocolate;
     border-radius: 8px;
+    cursor: pointer;
 }
 
-.container_imagem_home{
+.container_section_home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.container_imagem_home {
     width: 100%;
-    position: relative;
+    height: 700px;
 }
 
-.container_informação_home{
-    padding: 1.875rem;
-    width: 30rem;
-    position: absolute;
-    top: 10rem;
-    right: 0;
+.container_informação_home {
     color: dimgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #E5E5E5;
+    text-align: center;
 }
 
 
-.titulo_home{
-   font-size: 30px; 
-   color: slategray;
+.titulo_home {
+    font-size: 30px;
+    color: slategray;
+    padding-bottom: 10px;
 }
 
-.texto_home, .btn_agendamento_home{
-  font-size: 20px;
+.texto_home {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.btn_agendamento_home {
+    font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    .container_imagem_home {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .imagem_logomarca {
+        width: 150px;
+    }
+
+    .container_header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_li {
+        padding-bottom: 10px;
+
+    }
+
+    .container_link_header {
+     font-size: 20px;
+     color: #E5E5E7;
+    }
+
+    .imagem_mobile{
+        display: block;
+        width: 50px;
+    }
+
+    .container_imagem{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container_navegação{
+        display: none;
+        background-color: #b0aeab;
+        width: 220px;
+        padding: 10px;
+    }
+
+    .fechar{
+        display: block;
+        width: 50px;
+        right: 0;
+        position:absolute;
+        padding: 5px;
+    }
+
+    .container_section_home{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container_informação_home{
+        height: 350px;
+        background-color: white;
+    }
+
+    .container_imagem_home{
+        height: 250px;
+    }
+   
 }
