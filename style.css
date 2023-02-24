@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+
 .container_header {
     display: flex;
     justify-content: space-between;
@@ -24,15 +25,39 @@
 
 .container_link_header {
     text-decoration: none;
-    color: chocolate;
+    color: slategray;
     text-transform: uppercase;
 }
 
 .btn_agendar {
-    border: 3px solid #e4e1db;
+    border: 3px solid #b0aeab;
     padding: 10px;
     color: #ebe8e3;
     font-weight: bold;
     background: chocolate;
     border-radius: 8px;
+}
+
+.container_imagem_home{
+    width: 100%;
+    position: relative;
+}
+
+.container_informação_home{
+    padding: 1.875rem;
+    width: 30rem;
+    position: absolute;
+    top: 10rem;
+    right: 0;
+    color: dimgray;
+}
+
+
+.titulo_home{
+   font-size: 30px; 
+   color: slategray;
+}
+
+.texto_home, .btn_agendamento_home{
+  font-size: 20px;
 }
