@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #3f83f7;
+    background-color: #7ca6ed;
 }
 
 .imagem_mobile,
@@ -31,6 +31,7 @@
 
 .container_li:hover {
     background: #96b7ee;
+    border-radius: 10px;
 }
 
 .container_link_header {
@@ -43,9 +44,9 @@
 .btn_agendar {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
-    color: #ebe8e3;
+   color: white;
     font-weight: bold;
-    background: rgb(54, 141, 222);
+    background: rgb(232, 141, 37);
     border-radius: 8px;
     cursor: pointer;
 }
@@ -88,12 +89,16 @@
     padding: 10px;
     color: #ebe8e3;
     font-weight: bold;
-    background: rgb(54, 141, 222);
+    background-color: #7ca6ed;
     border-radius: 8px;
     cursor: pointer;
     border: none;
     width: 300px;
     margin-left: 30px;
+}
+
+.btn_agendamento_home:hover{
+    background-color: chocolate;
 }
 
 .container_servicos {
