@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+body{
+    margin: 0, 20px
+}
 
 .container_header {
     display: flex;
@@ -80,6 +83,19 @@
 
 .btn_agendamento_home {
     font-size: 20px;
+}
+
+.container_servicos{
+    margin: 20px;
+   text-align: center;
+   font-size: 24px;
+   color: slategray;
+   padding-bottom: 20px;
+}
+
+.texto_especialista{
+  
+    padding: 10px;
 }
 
 @media screen and (max-width:1024px) {
