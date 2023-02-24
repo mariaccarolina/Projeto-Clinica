@@ -4,24 +4,20 @@
     box-sizing: border-box;
 }
 
-body{
-    margin: 0, 20px
-}
-
 .container_header {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-
+    background-color:#3f83f7;
 }
 
-.imagem_mobile, .fechar{
+.imagem_mobile,
+.fechar {
     display: none;
 }
 
 .imagem_logomarca {
     width: 100%;
-
 }
 
 .container_ul {
@@ -33,18 +29,23 @@ body{
     list-style: none;
 }
 
+.container_li:hover {
+background: #96b7ee;
+}
+
 .container_link_header {
     text-decoration: none;
-    color: slategray;
+   color: white;
+   font-weight: bold;
     text-transform: uppercase;
 }
 
 .btn_agendar {
-    border: 3px solid #b0aeab;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
     color: #ebe8e3;
     font-weight: bold;
-    background: chocolate;
+    background: rgb(54, 141, 222);
     border-radius: 8px;
     cursor: pointer;
 }
@@ -56,57 +57,129 @@ body{
 
 .container_imagem_home {
     width: 100%;
-    height: 700px;
+    height: 800px;
 }
 
 .container_informação_home {
     color: dimgray;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    background: #E5E5E5;
-    text-align: center;
+    background-image: url("./img/Design\ sem\ nome\ \(1\).png");
+    background-position: center;
+    background-size: 590px;
 }
-
 
 .titulo_home {
     font-size: 30px;
-    color: slategray;
+    color: rgb(67, 83, 99);
     padding-bottom: 10px;
+    text-align: center;
 }
 
 .texto_home {
     font-size: 24px;
-    padding-bottom: 20px;
+    padding: 30px;
 }
 
 .btn_agendamento_home {
     font-size: 20px;
-}
-
-.container_servicos{
-    margin: 20px;
-   text-align: center;
-   font-size: 24px;
-   color: slategray;
-   padding-bottom: 20px;
-}
-
-.texto_especialista{
-  
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
+    color: #ebe8e3;
+    font-weight: bold;
+    background: rgb(54, 141, 222);
+    border-radius: 8px;
+    cursor: pointer;
+    border:none;
+    width: 300px;
+}
+
+.container_servicos {
+    text-align: center;
+    font-size: 24px;
+    color: rgb(67, 83, 99);
+    padding-bottom: 20px;
+
+}
+
+.titulo_servicos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.box_variedade_especialistas{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto_especialista {
+    width: 900px;
+    text-align: center;
+}
+
+.especialidade{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, 
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  margin: 10px;
+ border-radius: 10px;
+  width: 300px;
+}
+
+.title_especialista{
+    color: white;
+}
+
+.imagem_especialista{
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.mais_especialidades {
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    font-weight: bold;
+    background: rgb(54, 141, 222);
+    border-radius: 8px;
+    cursor: pointer;
+    border:none;
+    width: 300px;
+}
+
+.link_especialidades{
+    text-decoration: none;
+   color: white;
+   
 }
 
 @media screen and (max-width:1024px) {
     .container_imagem_home {
         height: 500px;
     }
+
+    .texto_especialista {
+        padding: 0;
+        margin: 0;
+    }
 }
 
-@media screen and (max-width:700px) {
+@media screen and (max-width:800px) {
     .imagem_logomarca {
         width: 150px;
+    }
+
+    .titulo_home{
+        font-size: 24px;
+        margin-top: 20px;
     }
 
     .container_header {
@@ -120,52 +193,103 @@ body{
     }
 
     .container_li {
-        padding-bottom: 10px;
+        padding-bottom: 20px;
 
+    }
+
+    .container_li:hover{
+        background-color: #3f83f7;
     }
 
     .container_link_header {
-     font-size: 20px;
-     color: #E5E5E7;
+        font-size: 20px;
+     color: white;
     }
 
-    .imagem_mobile{
+    .imagem_mobile {
         display: block;
         width: 50px;
     }
 
-    .container_imagem{
+    .container_imagem {
         display: flex;
         justify-content: space-between;
     }
 
-    .container_navegação{
+    .container_navegação {
         display: none;
         background-color: #b0aeab;
-        width: 220px;
+        width: 270px;
+        height: 350px;
         padding: 10px;
     }
 
-    .fechar{
+    .fechar {
         display: block;
         width: 50px;
         right: 0;
-        position:absolute;
+        position: absolute;
         padding: 5px;
     }
 
-    .container_section_home{
+    .container_section_home {
         display: flex;
         flex-direction: column;
     }
 
-    .container_informação_home{
+    .container_informação_home {
         height: 350px;
         background-color: white;
     }
 
-    .container_imagem_home{
-        height: 250px;
+    .container_imagem_home {
+        display: none;
     }
-   
+
+    .texto_especialista {
+       margin: 10px 20px;
+    }
+
+    .box_variedade_especialistas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .especialidade{
+        width: 100px;
+    }
+
 }
+
+@media screen and (max-width:400px) {
+   .container_informação_home{
+    height: 500px;
+    background-size: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+
+.texto_home{
+    margin-top: 0;
+}
+
+.texto_especialista {
+  width: 90%;
+  margin: 10px;
+ }
+
+ .titulo_container_especialista{
+    font-size: 24px;
+    text-transform: uppercase;
+ }
+
+.especialidade{
+    width: 140px;
+}
+
+.box_variedade_especialistas{
+  margin: 20px;
+}
+    }
