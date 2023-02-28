@@ -180,7 +180,6 @@
 .imagem_especialista {
     width: 250px;
     height: 250px;
-
 }
 
 .mais_especialidades {
@@ -389,6 +388,10 @@
     .texto_convenio{
         width: 100%;
         padding: 20px;
+    }
+
+    .titulo_convenio{
+        padding-bottom: 0;
     }
     .titulo_container_especialista{
         padding-bottom: 0;
