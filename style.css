@@ -8,12 +8,13 @@
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    background-color: #7ca6ed;
+    background-color: #3045C4;
 }
 
 .imagem_mobile,
 .fechar {
     display: none;
+    cursor: pointer;
 }
 
 .imagem_logomarca {
@@ -54,6 +55,7 @@
 .container_section_home {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
 }
 
 .link_home{
@@ -63,7 +65,8 @@
 
 .container_imagem_home {
     width: 100%;
-    height: 800px;
+    height: 500px;
+    object-fit: contain;
 }
 
 .container_informação_home {
@@ -73,7 +76,7 @@
     justify-content: center;
     background-image: url("./img/Design\ sem\ nome\ \(1\).png");
     background-position: center;
-    background-size: 590px;
+    background-size: 610px;
 }
 
 .titulo_home {
@@ -94,7 +97,7 @@
     padding: 10px;
     color: #ebe8e3;
     font-weight: bold;
-    background-color: #7ca6ed;
+    background-color: #3045C4;
     border-radius: 8px;
     cursor: pointer;
     border: none;
