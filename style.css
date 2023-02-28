@@ -45,20 +45,20 @@
 .btn_agendar {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
-   color: white;
+    color: white;
     font-weight: bold;
     background: rgb(232, 141, 37);
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
 .container_section_home {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    
+
 }
 
-.link_home{
+.link_home {
     color: white;
     text-decoration: none;
 }
@@ -98,15 +98,35 @@
     color: #ebe8e3;
     font-weight: bold;
     background-color: #3045C4;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
     border: none;
     width: 300px;
     margin-left: 30px;
 }
 
-.btn_agendamento_home:hover{
+.btn_agendamento_home:hover {
     background-color: chocolate;
+}
+
+#busca {
+    width: 300px;
+    height: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #eee7e2;
+    padding: 20px;
+}
+
+#busca::placeholder {
+    color: rgb(67, 83, 99);
+    text-align: center;
+}
+
+#busca:hover {
+    outline: 2px solid #3045C4;
 }
 
 .container_servicos {
@@ -160,6 +180,7 @@
 .imagem_especialista {
     width: 250px;
     height: 250px;
+
 }
 
 .mais_especialidades {
@@ -167,8 +188,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
     font-weight: bold;
-    background: rgb(54, 141, 222);
-    border-radius: 8px;
+    background: #3045C4;
+    border-radius: 20px;
     cursor: pointer;
     border: none;
     width: 300px;
@@ -178,6 +199,47 @@
     text-decoration: none;
     color: white;
 
+}
+
+.container_convenios {
+    background-color: #3045C4;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.texto_convenio {
+    font-size: 24px;
+    width: 600px;
+    padding: 10px;
+}
+
+.title_convenio {
+    font-size: 30px;
+    padding: 20px;
+}
+
+#busca_convenio {
+    width: 300px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #eee7e2;
+    padding: 20px;
+}
+
+#busca_convenio::placeholder {
+    color: rgb(67, 83, 99);
+    text-align: center;
+}
+
+#busca_convenio:hover {
+    outline: 2px solid #f59106;
 }
 
 @media screen and (max-width:1024px) {
@@ -193,6 +255,10 @@
     .imagem_especialista {
         width: 220px;
         height: 250px;
+    }
+
+    .especialidade{
+        padding: 4px;
     }
 }
 
@@ -296,6 +362,36 @@
     }
 }
 
+@media screen and (max-width:600px) {
+    .titulo_home {
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .texto_home {
+        padding: 0;
+        margin: 10px;
+        text-align: center;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #busca,
+    .btn_agendamento_home {
+        margin-left: 0;
+    }
+
+    .texto_convenio{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
 @media screen and (max-width:400px) {
     .container_informação_home {
         height: 500px;
@@ -304,11 +400,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 10px;
     }
 
 
     .texto_home {
-        margin-top: 0;
+        margin-top: 8px;
+        text-align: center;
     }
 
     .texto_especialista {
@@ -339,7 +437,8 @@
         padding: 10px;
     }
 
-    .especialidade, .imagem_especialista{
+    .especialidade,
+    .imagem_especialista {
         width: 100%;
         object-fit: cover;
     }
@@ -348,19 +447,42 @@
         margin-left: 0;
     }
 
-    .mais_especialidades{
-        width: 9
-        90%;
+    .mais_especialidades {
+        width: 9 90%;
         margin: 20px;
     }
 }
 
 @media screen and (max-width:350px) {
-    .titulo_home, .titulo_container_especialista {
+
+    .titulo_home,
+    .titulo_container_especialista {
         font-size: 22px;
     }
 
-    .especialidade, .imagem_especialista{
+    .titulo_home {
+        margin: 10px;
+    }
+
+    .texto_home {
+        margin: 10px;
+    }
+
+    .especialidade,
+    .imagem_especialista {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    #busca,
+    .btn_agendamento_home,
+    .mais_especialidades {
+        width: 100%;
+    }
+
+    .btn {
+        margin: 10px;
     }
 }
