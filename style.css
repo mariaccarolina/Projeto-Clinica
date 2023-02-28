@@ -245,7 +245,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
- margin: 20px;
     flex-direction: column;
 }
 
@@ -282,7 +281,7 @@
 
     .mapa{
         width: 100%;
-
+        padding: 20px;
     }
 
     .titulo_home {
@@ -428,6 +427,9 @@
         padding: 10px;
     }
 
+    .mapa{
+        width: 100%;
+    }
 
     .texto_home {
         margin-top: 8px;
