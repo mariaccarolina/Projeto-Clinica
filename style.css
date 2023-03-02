@@ -119,9 +119,27 @@ p {
     width: 300px;
     margin-left: 30px;
 }
+.consulta_home{
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    color: #ebe8e3;
+    font-weight: bold;
+    background: rgb(232, 141, 37);
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.consulta_home:hover{
+    background-color: green;
+}
 
 .btn_agendamento_home:hover {
-    background-color: chocolate;
+    background-color: green;
 }
 
 #busca {
