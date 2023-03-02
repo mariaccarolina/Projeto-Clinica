@@ -67,7 +67,7 @@ p {
     cursor: pointer;
 }
 
-.container_section_home {
+#container_section_home {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
@@ -144,7 +144,7 @@ p {
     outline: 2px solid #3045C4;
 }
 
-.container_servicos {
+#container_servicos {
     text-align: center;
     font-size: 24px;
     color: rgb(67, 83, 99);
@@ -219,7 +219,7 @@ p {
 
 }
 
-.container_convenios {
+#container_convenios {
     background-color: #3045C4;
     color: white;
     text-align: center;
@@ -455,7 +455,7 @@ p {
         padding: 5px;
     }
 
-    .container_section_home {
+    #container_section_home {
         display: flex;
         flex-direction: column;
         padding: 10px;
