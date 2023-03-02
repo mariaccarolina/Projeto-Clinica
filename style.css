@@ -4,20 +4,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lora" ;
-    
+    font-family: "Lora";
+
 }
 
-h1{
+h1 {
     font-family: "Lora";
     font-weight: 900;
     text-transform: uppercase;
     font-size: 24px;
 }
 
-p{
+p {
     font-weight: 400;
 }
+
 .container_header {
     display: flex;
     justify-content: space-between;
@@ -208,6 +209,10 @@ p{
     width: 300px;
 }
 
+.mais_especialidades:hover {
+    background: #f59106;
+}
+
 .link_especialidades {
     text-decoration: none;
     color: white;
@@ -255,67 +260,71 @@ p{
     outline: 2px solid #f59106;
 }
 
-.map{
+.map {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.titulo_map{
+.titulo_map {
     color: rgb(67, 83, 99);
     margin: 10px;
     padding-bottom: 10px;
 }
 
-.title_exames{
+.title_exames {
     color: darkslategrey;
     text-align: center;
     margin: 20px;
 }
 
-.container_exames{
+.container_exames {
     position: relative;
     padding: 15px;
     max-width: 790px;
     margin: 0 auto;
 }
 
-.gallery{
+.gallery {
     display: flex;
     flex-flow: row nowrap;
     gap: 15px;
 }
 
-.gallery-wrapper{
+.gallery-wrapper {
     overflow-x: auto;
 }
 
-.gallery-wrapper::-webkit-scrollbar{
+.gallery-wrapper::-webkit-scrollbar {
     display: none;
 }
 
-.left, .right{
-   position: absolute;
-   top: 0;
-   left: 0;
-   right: auto;
-   bottom: 0;
+.left,
+.right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
     width: 40px;
     cursor: pointer;
     border: none;
-    background: linear-gradient(to left, transparent 0%, black 200%);
+    background: white;
 
 }
-.right{
+
+.right {
     left: auto;
     right: 0;
 }
 
-.btn_left, .btn_right{
+.btn_left,
+.btn_right {
     width: 40px;
 }
-.item{
+
+.item {
     width: 590px;
     height: 300px;
     object-fit: contain;
@@ -325,7 +334,37 @@ p{
 
 .current-item {
     opacity: 1;
-  }
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: #3045C4;
+    width: 100%;
+    padding:  50px;
+    margin-top: 30px;
+}
+
+.ul-footer, .li-footer {
+    display: flex;
+}
+
+.link-footer {
+    color: white;
+    text-decoration: none;
+}
+
+.texto-footer{
+    font-size: 20px;
+}
+
+.img-footer{
+    width: 60px;
+    padding: 10px;
+}
 
 @media screen and (max-width:1024px) {
     .container_imagem_home {
@@ -342,7 +381,7 @@ p{
         height: 250px;
     }
 
-    .especialidade{
+    .especialidade {
         padding: 4px;
     }
 }
@@ -352,7 +391,7 @@ p{
         width: 150px;
     }
 
-    .mapa{
+    .mapa {
         width: 100%;
         padding: 20px;
     }
@@ -473,7 +512,8 @@ p{
         padding: 0;
     }
 
-    .texto_home, .texto_convenio{
+    .texto_home,
+    .texto_convenio {
         font-size: 20px;
     }
 
@@ -482,20 +522,27 @@ p{
         margin-left: 0;
     }
 
-    .texto_convenio{
+    .texto_convenio {
         width: 100%;
         padding: 20px;
     }
 
-    .titulo_convenio{
-        padding-bottom: 0;
-    }
-    .titulo_container_especialista{
+    .titulo_convenio {
         padding-bottom: 0;
     }
 
-    .texto_especialista{
+    .titulo_container_especialista {
+        padding-bottom: 0;
+    }
+
+    .texto_especialista {
         display: none;
+    }
+    .container-footer{
+        flex-direction: column;
+    }
+    .li-footer{
+     padding: 10px;
     }
 }
 
@@ -510,7 +557,7 @@ p{
         padding: 10px;
     }
 
-    .mapa{
+    .mapa {
         width: 100%;
     }
 
@@ -560,8 +607,12 @@ p{
     }
 
     .mais_especialidades {
-     width: 100%;
+        width: 90%;
+        margin: 10px;
+        padding: 0;
+        height: 35px;
     }
+   
 }
 
 @media screen and (max-width:350px) {

@@ -33,7 +33,7 @@ p{
 input{
     display: block;
     width: 400px;
-    height: 30px;
+    height: 40px;
     border-radius: 10px;
     border: 1px solid rgb(192, 195, 201);
     background: #c7c8ce;
@@ -49,6 +49,24 @@ input::placeholder{
 
 input:hover{
  outline: #7ca6ed 2px solid;
+}
+
+.agendamento{
+   background-color: darkorange;
+  width: 400px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family:"Lora" ;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+.agendamento:hover{
+    background-color: rgb(21, 185, 59);
 }
 
   @media screen and (max-width:400px) {
