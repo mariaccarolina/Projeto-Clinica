@@ -24,6 +24,8 @@ p {
     justify-content: space-between;
     padding: 10px;
     background-color: #3045C4;
+   position: sticky;
+   top: 0;
 }
 
 .imagem_mobile,
@@ -396,6 +398,20 @@ p {
 .img-footer{
     width: 60px;
     padding: 10px;
+    background-color: #f59106;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.voltar-ao-top, .link-top{
+    color: white;
+    text-decoration: none;
+}
+
+.imagem-top{
+    width: 70px;
+    background-color: #f59106;
+    border-radius: 50px;
 }
 
 @media screen and (max-width:1024px) {
@@ -549,6 +565,11 @@ p {
         padding: 0;
     }
 
+    .consulta_home{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
     .texto_home,
     .texto_convenio {
         font-size: 20px;
@@ -578,11 +599,11 @@ p {
     .container-footer{
         flex-direction: column;
     }
-    .li-footer{
-     padding: 10px;
-    }
+   
 }
+@media screen and (max-width:500px){
 
+}
 @media screen and (max-width:400px) {
     .container_informação_home {
         height: 500px;
@@ -649,6 +670,10 @@ p {
         padding: 0;
         height: 35px;
     }
+
+    .texto-footer{
+        margin-bottom: 20px;
+    }
    
 }
 
@@ -683,5 +708,9 @@ p {
 
     .btn {
         margin: 10px;
+    }
+
+    .img-footer, .imagem-top{
+        width: 50px;
     }
 }
