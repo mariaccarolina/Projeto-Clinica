@@ -260,6 +260,20 @@ p {
     outline: 2px solid #f59106;
 }
 
+.image_convenio{
+    max-width: 100%;
+  
+}
+
+.btn_convenio{
+    margin-left: 0;
+    background-color: green;
+}
+
+.btn_convenio:hover{
+    background-color: #f59106;
+}
+
 .map {
     display: flex;
     align-items: center;
@@ -390,6 +404,11 @@ p {
     .imagem_logomarca {
         width: 150px;
     }
+
+    
+.btn_convenio{
+    margin-left: 0;
+}
 
     .mapa {
         width: 100%;
