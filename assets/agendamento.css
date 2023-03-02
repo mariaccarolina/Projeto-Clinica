@@ -69,6 +69,10 @@ input:hover{
     background-color: rgb(21, 185, 59);
 }
 
+.texto-footer{
+    color: white;
+}
+
   @media screen and (max-width:400px) {
     input{
      width: 100%;
